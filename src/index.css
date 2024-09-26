@@ -57,3 +57,11 @@
     cursor: pointer;
     transition: all 1s;
 }
+
+#previous{
+	border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
+}
+
+#next{
+	border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
+}
