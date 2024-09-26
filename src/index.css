@@ -1,67 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url(./image/mapa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0.5px solid;
 }
 
 .container-slide {
-    display: flex;
-    justify-content: space-between;
-    width: 50vw;
-    height: 50vh;
-    background-color: black;
-    margin: 20vh auto;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px black;
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  height: 60vh;
+  background-color: black;
+  margin: 8.75rem auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px black;
 }
 
 .container-items {
-    position: absolute;
-    display: flex;
-   width: 50vw;
-   height: 50vh;
-   border-radius: 10px;
-   overflow: hidden;
+  position: absolute;
+  display: flex;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .item {
-    width: 50vw;
-    height: 50vh;
-    transition: all 1s;
+  width: 50vw;
+  height: 60vh;
+  transition: all 1s;
 }
 
 .item:first-child {
-    margin-left: -100%;
+  margin-left: -100%;
 }
 
 .item img {
-    width: 50vw;
-    height: 50vh;
-    border-radius: 10px;
+  width: 40vw;
+  height: 60vh;
+  border-radius: 10px;
 }
 
 .action-btn {
-    font: bold 30px sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    color: #00000000;
-    user-select: none;
-    z-index: 1;
+  font: bold 30px sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  color: #00000000;
+  user-select: none;
+  z-index: 1;
 }
 
 .action-btn:hover {
-    color: white;
-    background-color: #5b5b5b;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 1s;
+  color: white;
+  background-color: #6c6969;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+  opacity: 70%;
 }
 
-#previous{
-	border-radius: var(--pattern-border-radius) 0px 0px var(--pattern-border-radius);
+#previous {
+  border-radius: 10px 0 0 10px;
 }
 
-#next{
-	border-radius: 0px var(--pattern-border-radius) var(--pattern-border-radius) 0px;
+#next {
+  border-radius: 0px 10px 10px 0px;
 }
